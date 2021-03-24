@@ -92,18 +92,5 @@ function keyPressed(){
     }
 }
 
-async function something(){
-    var variable = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
-    var variablee = await variable.json();
- 
- var extractsomething = variablee.datetime.slice(11,13);
- console.log(extractsomething);
-  if(extractsomething>=6&&extractsomething<=18){
-    backgroundImg = loadImage("sprites/bg.png");
-  }
-  else{
-    backgroundImg = loadImage("sprites/bg2.jpg");
-  }
-}
 
 
